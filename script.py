@@ -82,5 +82,5 @@ plt.tight_layout()
 plt.savefig("plot_top10_cities_total_sales.png")
 plt.clf()
 
-# Stop Spark session if no longer needed
+
 spark.stop()
