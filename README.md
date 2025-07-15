@@ -71,5 +71,7 @@ Future Improvements
 Author
 
 Amine Lambaouak
+
 📧 aminelambaouak@gmail.com
+
 🔗 https://www.linkedin.com/in/amine-lambaouak-656575172/
