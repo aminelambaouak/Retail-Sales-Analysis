@@ -1,53 +1,75 @@
-Retail Sales Analysis with PySpark
-Description
+🛒 Retail Sales Analysis with PySpark
 
-This project analyzes retail sales data using PySpark. It loads a CSV dataset, cleans and transforms it, and produces visualizations showing:
+This project performs a data analysis on a retail sales dataset using PySpark, with the goal of understanding sales distribution across countries and cities.
+Objective
 
-    Total sales by country
+    Analyze retail sales data by country and city.
 
-    Top 10 cities by total sales
+    Identify the top-performing countries and cities based on total sales.
 
-The results are saved as PNG images.
-Features
+    Generate visualizations for business insights.
 
-    Load data with a defined schema in Spark
+Technologies Used
 
-    Clean and rename columns for clarity
+    PySpark for big data processing
 
-    Aggregate sales data by country and city
+    Pandas for intermediate data handling
 
-    Convert Spark DataFrames to Pandas for plotting
+    Matplotlib and Seaborn for data visualization
 
-    Create bar plots using Seaborn and Matplotlib
+    Jupyter Notebook or Python script (.py) for execution
 
-    Save plots as images
+Dataset
 
-Requirements
+Format: CSV
+Sample Columns: ORDERNUMBER, QUANTITYORDERED, PRICEEACH, SALES, CITY, COUNTRY, CUSTOMERNAME, PRODUCTLINE
 
-    Python 3.x
+Dataset path used in the code:
+"/home/amine/Downloads/sales_data_sample.csv"
+Main Steps
 
-    PySpark
+    Data Loading:
+    Load the dataset using a custom schema via spark.read.csv.
 
-    pandas
+    Data Cleaning:
+    Drop unused columns.
+    Capitalize and rename column names for better readability.
 
-    seaborn
+    Aggregation:
+    Total sales by country.
+    Top 10 cities by total sales.
 
-    matplotlib
+    Visualization:
+    Bar charts with Seaborn and Matplotlib.
 
-Install dependencies with:
+Output Visualizations
 
-pip install pyspark pandas seaborn matplotlib
+    Total Sales by Country
 
-Usage
+    Top 10 Cities by Total Sales
 
-    Place your CSV file (e.g., sales_data_sample.csv) in the specified path.
+Key Insights
 
-    Run the Python script.
+    The USA leads in total country sales.
 
-    The plots will be saved as plot_country_total_sales.png and plot_top10_cities_total_sales.png.
+    Madrid, San Rafael, and NYC are the top three cities in total sales.
 
-Notes
+    These insights can guide marketing and logistics decisions.
 
-    Adjust the CSV path in the script if needed.
+Future Improvements
 
-    The Spark session is stopped at the end to free resources.
+    Use Spark SQL for more complex querying
+
+    Deploy the pipeline using Databricks or Apache Airflow
+
+    Save results in Parquet/Delta format for optimized storage
+
+    Build a dashboard using Power BI or Tableau
+
+    Add time-series analysis for trend detection
+
+Author
+
+Amine Lambaouak
+📧 aminelambaouak@gmail.com
+🔗 https://www.linkedin.com/in/amine-lambaouak-656575172/
