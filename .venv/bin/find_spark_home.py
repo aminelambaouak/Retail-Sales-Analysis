@@ -1,4 +1,4 @@
-#!/home/amine/spark_project/.venv/bin/python3
+#!/home/amine/Retail-Sales-Analysis/.venv/bin/python3
 
 #
 # Licensed to the Apache Software Foundation (ASF) under one or more
